@@ -1,4 +1,4 @@
-import Wrapper from "@/shared/ui/wrapper";
+import Wrapper from "@/shared/ui//custom/wrapper";
 import Menu from "./menu";
 
 const HomePage = () => {
