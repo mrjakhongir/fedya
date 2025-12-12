@@ -22,8 +22,8 @@ const ByEducationLevel = () => {
   const [value, setValue] = useQueryState("edu-level");
   return (
     <Select value={value ?? ""} onValueChange={setValue}>
-      <SelectTrigger className="w-[120px] bg-white">
-        <SelectValue placeholder="Select" />
+      <SelectTrigger className="flex-1 bg-white">
+        <SelectValue placeholder="Select education level" />
       </SelectTrigger>
       <SelectContent>
         {educationLevels.map((level) => (
