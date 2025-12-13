@@ -2,11 +2,14 @@ import Wrapper from "@/shared/ui//custom/wrapper";
 import Menu from "./menu";
 
 const HomePage = () => {
-  const user = window.Telegram.WebApp.initDataUnsafe.user;
+  const tg = window.Telegram?.WebApp;
+  tg?.ready();
+
+  const user = tg?.initDataUnsafe?.user;
+  if (user) return <>user:{JSON.stringify(user)}</>;
 
   return (
     <Wrapper>
-      user:{JSON.stringify(user)}
       <Menu />
     </Wrapper>
   );
