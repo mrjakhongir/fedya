@@ -6,7 +6,7 @@ const HomePage = () => {
 
   return (
     <Wrapper>
-      {JSON.stringify(user)}
+      user:{JSON.stringify(user)}
       <Menu />
     </Wrapper>
   );
