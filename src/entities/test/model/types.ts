@@ -9,4 +9,5 @@ export interface ITest {
   university: string;
   createdAt: string;
   semestr: string;
+  options: { id: number; label: string }[];
 }

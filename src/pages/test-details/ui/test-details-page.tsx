@@ -1,10 +1,10 @@
+import Header from "@/widgets/header/header";
 import Details from "./details";
-import Header from "./header";
 
 const TestDetailsPage = () => {
   return (
-    <div>
-      <Header />
+    <div className="flex flex-col gap-5">
+      <Header title="Test details" />
 
       <Details />
     </div>

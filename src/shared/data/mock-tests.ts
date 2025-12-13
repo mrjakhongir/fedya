@@ -10,6 +10,24 @@ export const testList = [
     university: "University 1",
     createdAt: "2022-01-01",
     semestr: "I",
+    options: [
+      {
+        id: 1,
+        label: "Option 1",
+      },
+      {
+        id: 2,
+        label: "Option 2",
+      },
+      {
+        id: 3,
+        label: "Option 3",
+      },
+      {
+        id: 4,
+        label: "Option 4",
+      },
+    ],
   },
   {
     id: 2,
@@ -22,6 +40,24 @@ export const testList = [
     university: "University 1",
     createdAt: "2022-01-01",
     semestr: "I",
+    options: [
+      {
+        id: 1,
+        label: "Option 1",
+      },
+      {
+        id: 2,
+        label: "Option 2",
+      },
+      {
+        id: 3,
+        label: "Option 3",
+      },
+      {
+        id: 4,
+        label: "Option 4",
+      },
+    ],
   },
   {
     id: 3,
@@ -34,5 +70,23 @@ export const testList = [
     university: "University 1",
     createdAt: "2022-01-01",
     semestr: "I",
+    options: [
+      {
+        id: 1,
+        label: "Option 1",
+      },
+      {
+        id: 2,
+        label: "Option 2",
+      },
+      {
+        id: 3,
+        label: "Option 3",
+      },
+      {
+        id: 4,
+        label: "Option 4",
+      },
+    ],
   },
 ];

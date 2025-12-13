@@ -1,7 +1,10 @@
+import SectionTitle from "@/shared/ui/custom/section-title";
+import SectionWrapper from "@/shared/ui/custom/section-wrapper";
+
 const DemoTests = () => {
   return (
-    <section className="mb-14 rounded-xl bg-white p-4 shadow-sm">
-      <h2 className="mb-4 text-xl font-semibold text-slate-800">Demo tests</h2>
+    <SectionWrapper>
+      <SectionTitle title="Demo tests" />
 
       <ul className="flex flex-col gap-4">
         <li>
@@ -50,7 +53,7 @@ const DemoTests = () => {
           </ul>
         </li>
       </ul>
-    </section>
+    </SectionWrapper>
   );
 };
 
