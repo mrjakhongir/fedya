@@ -1,7 +1,14 @@
-import Wrapper from "@/shared/ui/custom/wrapper";
+import Details from "./details";
+import Header from "./header";
 
 const TestDetailsPage = () => {
-  return <Wrapper> TestDetailsPage</Wrapper>;
+  return (
+    <div>
+      <Header />
+
+      <Details />
+    </div>
+  );
 };
 
 export default TestDetailsPage;
