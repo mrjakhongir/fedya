@@ -10,7 +10,7 @@ export class BaseApi<TData = unknown, TCreate = unknown, TUpdate = unknown> {
     return apiClient.get<TData[]>(this.basePath, { params });
   }
 
-  detail(id: number) {
+  detail(id: string) {
     return apiClient.get<TData>(`${this.basePath}/${id}`);
   }
 

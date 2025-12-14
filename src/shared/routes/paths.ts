@@ -1,5 +1,6 @@
 export const paths = {
   home: "/",
+  onboarding: "/onboarding",
 
   tests: {
     root: "/tests",
