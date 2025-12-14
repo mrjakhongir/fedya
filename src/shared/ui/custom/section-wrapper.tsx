@@ -7,7 +7,7 @@ type Props = {
 
 const SectionWrapper: React.FC<Props> = ({ children, className }) => {
   return (
-    <section className={cn("rounded-xl bg-white p-4 shadow-sm", className)}>
+    <section className={cn("rounded-xl bg-white py-4 shadow-sm", className)}>
       {children}
     </section>
   );
