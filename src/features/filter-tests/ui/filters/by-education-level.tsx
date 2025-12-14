@@ -16,6 +16,10 @@ const educationLevels = [
     id: 2,
     title: "Bachelors",
   },
+  {
+    id: 3,
+    title: "PhD",
+  },
 ];
 
 const ByEducationLevel = () => {
@@ -23,7 +27,7 @@ const ByEducationLevel = () => {
   return (
     <Select value={value ?? ""} onValueChange={setValue}>
       <SelectTrigger className="flex-1 bg-white">
-        <SelectValue placeholder="Select education level" />
+        <SelectValue placeholder="Masters" />
       </SelectTrigger>
       <SelectContent>
         {educationLevels.map((level) => (

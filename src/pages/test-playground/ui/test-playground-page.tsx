@@ -1,15 +1,18 @@
 import Header from "@/widgets/header/header";
+import { useState } from "react";
 import Playground from "./playground";
 import TestSetup from "./setup";
 
 const TestPlaygroundPage = () => {
+  const [testStarted, setTestStarted] = useState(false);
+
   return (
     <div className="flex flex-col gap-5">
       <Header title="Test 1" />
 
-      <TestSetup />
+      <TestSetup testStarted={testStarted} setTestStarted={setTestStarted} />
 
-      <Playground />
+      <Playground testStarted={testStarted} setTestStarted={setTestStarted} />
     </div>
   );
 };

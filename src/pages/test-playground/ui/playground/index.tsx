@@ -1,74 +1,44 @@
 import { testList } from "@/shared/data/mock-tests";
-import { motionVariants } from "@/shared/lib/motion-variants";
 import { Button } from "@/shared/ui/button";
-import SectionWrapper from "@/shared/ui/custom/section-wrapper";
 import Wrapper from "@/shared/ui/custom/wrapper";
 import BottomActionsWrapper from "@/widgets/bottom-action-wrapper";
-import { AnimatePresence, motion } from "framer-motion";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import { useQueryState } from "nuqs";
-import { useState } from "react";
+import { ChevronLeft, ChevronRight, SquareCheckBig } from "lucide-react";
+import type { Dispatch, SetStateAction } from "react";
 import Question from "./question";
 
-const Playground = () => {
-  const [currQuestionIndex, setCurrQuestionIndex] = useQueryState("question", {
-    defaultValue: 0,
-    parse: (value) => Number(value),
-    serialize: (value) => String(value),
-  });
+type Props = {
+  testStarted: boolean;
+  setTestStarted: Dispatch<SetStateAction<boolean>>;
+};
 
-  const question = testList[currQuestionIndex];
-
-  const [direction, setDirection] = useState(1);
-
-  const next = () => {
-    setDirection(1);
-    setCurrQuestionIndex(currQuestionIndex + 1);
-  };
-
-  const prev = () => {
-    if (currQuestionIndex === 0) return;
-    setDirection(-1);
-    setCurrQuestionIndex(currQuestionIndex - 1);
-  };
+const Playground: React.FC<Props> = ({ testStarted }) => {
+  const question = testList[0];
 
   return (
-    <SectionWrapper className="flex flex-col gap-5 px-0">
-      <AnimatePresence mode="popLayout" custom={direction}>
-        <motion.div
-          key={currQuestionIndex}
-          custom={direction}
-          variants={motionVariants}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        >
-          <Question question={question} />
-        </motion.div>
-      </AnimatePresence>
+    <div className="flex flex-col gap-5">
+      {testStarted ? (
+        <Question question={question} />
+      ) : (
+        <Wrapper className="flex flex-col items-center justify-center gap-2 px-10 py-10 text-center text-xl text-slate-400">
+          <SquareCheckBig size={56} />
+          <p>In order to start the test</p>
+          <p>please choose the reight mode</p>
+        </Wrapper>
+      )}
 
       <BottomActionsWrapper>
         <Wrapper className="flex items-center gap-3">
-          <Button
-            variant="secondary"
-            onClick={prev}
-            disabled={currQuestionIndex === 0}
-            className="flex-1"
-          >
+          <Button variant="secondary" className="flex-1">
             <ChevronLeft />
             Prev
           </Button>
-          <Button
-            onClick={next}
-            disabled={currQuestionIndex === testList.length - 1}
-            className="flex-1"
-          >
+          <Button className="flex-1">
             Next
             <ChevronRight />
           </Button>
         </Wrapper>
       </BottomActionsWrapper>
-    </SectionWrapper>
+    </div>
   );
 };
 

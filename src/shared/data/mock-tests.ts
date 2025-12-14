@@ -10,6 +10,7 @@ export const testList = [
     university: "University 1",
     createdAt: "2022-01-01",
     semestr: "I",
+    author: "John Doe",
     options: [
       {
         id: 1,
@@ -40,6 +41,7 @@ export const testList = [
     university: "University 1",
     createdAt: "2022-01-01",
     semestr: "I",
+    author: "John Doe",
     options: [
       {
         id: 1,
@@ -70,6 +72,7 @@ export const testList = [
     university: "University 1",
     createdAt: "2022-01-01",
     semestr: "I",
+    author: "John Doe",
     options: [
       {
         id: 1,

@@ -10,4 +10,5 @@ export interface ITest {
   createdAt: string;
   semestr: string;
   options: { id: number; label: string }[];
+  author: string;
 }

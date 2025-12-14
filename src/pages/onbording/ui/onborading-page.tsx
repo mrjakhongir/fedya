@@ -29,11 +29,15 @@ const OnboradingPage = () => {
   }, []);
 
   return (
-    <Wrapper className="flex h-screen flex-col items-center justify-center gap-5">
-      <h1 className="text-2xl font-semibold">
-        Welcome to <span className="text-amber-600">My Test </span>🎉
-      </h1>
-      <p className="text-slate-600">Have a good journey</p>
+    <Wrapper className="flex h-screen flex-col items-center justify-center gap-3">
+      <div className="h-25 w-25 overflow-hidden rounded-full">
+        <img src={user.photo_url} alt={user.username} />
+      </div>
+      <h1 className="text-2xl font-semibold">Hello, {user.first_name}</h1>
+
+      <p className="text-slate-600">
+        Welcome to <span className="text-amber-600">My Assist </span>🎉
+      </p>
       <Button onClick={startApp}>Start</Button>
     </Wrapper>
   );

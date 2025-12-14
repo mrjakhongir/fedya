@@ -39,7 +39,7 @@ const ByCourseLevel = () => {
   return (
     <Select value={value ?? ""} onValueChange={setValue}>
       <SelectTrigger className="flex-1 bg-white">
-        <SelectValue placeholder="Select course level" />
+        <SelectValue placeholder="I" />
       </SelectTrigger>
       <SelectContent>
         {courseLevels.map((level) => (
