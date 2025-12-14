@@ -1,19 +1,10 @@
 import Wrapper from "@/shared/ui//custom/wrapper";
-import { useEffect, useState } from "react";
+import WebApp from "@twa-dev/sdk";
 import Menu from "./menu";
 
 const HomePage = () => {
-  const [user, setUser] = useState<TelegramUser | undefined>(undefined);
-  const tg = window.Telegram?.WebApp;
-  tg?.ready();
-
-  const tgUser = tg?.initDataUnsafe?.user;
-
-  useEffect(() => {
-    setUser(tgUser);
-    alert(JSON.stringify(tgUser));
-  }, [tgUser]);
-
+  console.log(WebApp.initDataUnsafe);
+  const user = WebApp.initDataUnsafe?.user;
   if (user) return <>user:{JSON.stringify(user)}</>;
 
   return (
