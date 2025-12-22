@@ -8,7 +8,6 @@ import TestsSearchPage from "@/pages/tests-search/ui/tests-search-page";
 import { paths } from "@/shared/routes";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { AppLayout } from "../layout/app-layout";
-import { ProtectedRoute } from "./protected-route";
 
 const router = createBrowserRouter([
   {
@@ -16,11 +15,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: paths.home,
-        element: (
-          <ProtectedRoute>
-            <HomePage />
-          </ProtectedRoute>
-        ),
+        element: <HomePage />,
       },
       { path: paths.onboarding, element: <OnboradingPage /> },
       {

@@ -1,14 +1,21 @@
+import { useUserLogin } from "@/entities/user/api/query";
 import { useAuthStore } from "@/features/auth/store/use-auth-store";
 import { paths } from "@/shared/routes";
 import { Button } from "@/shared/ui/button";
 import Wrapper from "@/shared/ui/custom/wrapper";
 import WebApp from "@twa-dev/sdk";
-import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 const OnboradingPage = () => {
   const navigate = useNavigate();
-  const { setUser, user: authUser } = useAuthStore();
+  const { setUser } = useAuthStore();
+  const { mutate: login } = useUserLogin({
+    onSuccess: (data) => {
+      setUser(data);
+      navigate(paths.home);
+    },
+  });
+
   const user = WebApp.initDataUnsafe?.user || {
     id: 467649937,
     first_name: "Jahongir",
@@ -17,16 +24,10 @@ const OnboradingPage = () => {
     photo_url:
       "https://t.me/i/userpic/320/5MLpWpkFap6yF2I-_3ZSQIFdaBSxilNYxYMfE7PIUX4.svg",
   };
-  const startApp = () => {
-    setUser(user);
-    navigate(paths.tests.root, { replace: true });
-  };
 
-  useEffect(() => {
-    if (authUser) {
-      navigate(paths.tests.root, { replace: true });
-    }
-  }, []);
+  const startApp = () => {
+    login(user);
+  };
 
   return (
     <Wrapper className="flex h-screen flex-col items-center justify-center gap-3">
