@@ -1,10 +1,8 @@
-import { testList } from "@/shared/data/mock-tests";
 import { Button } from "@/shared/ui/button";
 import Wrapper from "@/shared/ui/custom/wrapper";
 import BottomActionsWrapper from "@/widgets/bottom-action-wrapper";
 import { ChevronLeft, ChevronRight, SquareCheckBig } from "lucide-react";
 import type { Dispatch, SetStateAction } from "react";
-import Question from "./question";
 
 type Props = {
   testStarted: boolean;
@@ -12,12 +10,11 @@ type Props = {
 };
 
 const Playground: React.FC<Props> = ({ testStarted }) => {
-  const question = testList[0];
-
   return (
     <div className="flex flex-col gap-5">
       {testStarted ? (
-        <Question question={question} />
+        // <Question question={question} />
+        ""
       ) : (
         <Wrapper className="flex flex-col items-center justify-center gap-2 px-10 py-10 text-center text-xl text-slate-400">
           <SquareCheckBig size={56} />

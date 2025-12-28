@@ -5,7 +5,7 @@ import TestDescription from "./test-description";
 const CreateTestPage = () => {
   return (
     <div className="flex flex-col gap-5">
-      <Header title="Create test" />
+      <Header title="Create test" link="/tests" />
 
       <main className="flex flex-col gap-5">
         <TestDescription />
