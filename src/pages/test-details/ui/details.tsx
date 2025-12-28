@@ -3,6 +3,7 @@ import InfoItem from "@/shared/ui/custom/info-item";
 import SectionTitle from "@/shared/ui/custom/section-title";
 import SectionWrapper from "@/shared/ui/custom/section-wrapper";
 import Wrapper from "@/shared/ui/custom/wrapper";
+import ScreenLoader from "@/widgets/loader";
 import dayjs from "dayjs";
 import { useParams } from "react-router-dom";
 import Actions from "./actions";
@@ -10,7 +11,9 @@ import DemoTests from "./demo-tests";
 
 const Details = () => {
   const { id } = useParams();
-  const { data: selectedTest } = useTest(id);
+  const { data: selectedTest, isLoading } = useTest(id);
+
+  if (isLoading) return <ScreenLoader />;
 
   if (!selectedTest) return <Wrapper>Test not found</Wrapper>;
 

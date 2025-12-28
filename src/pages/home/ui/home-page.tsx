@@ -1,7 +1,7 @@
 import { useUserCheck } from "@/entities/user/api/query";
 import Wrapper from "@/shared/ui//custom/wrapper";
+import ScreenLoader from "@/widgets/loader";
 import WebApp from "@twa-dev/sdk";
-import { Loader } from "lucide-react";
 import { Navigate } from "react-router-dom";
 import Menu from "./menu";
 
@@ -16,13 +16,7 @@ const HomePage = () => {
   };
   const { data, isPending } = useUserCheck(user.id);
 
-  if (isPending) {
-    return (
-      <div className="flex h-screen items-center justify-center">
-        <Loader className="animate-spin" size={40} />
-      </div>
-    );
-  }
+  if (isPending) return <ScreenLoader />;
 
   if (data && !data.exists) {
     return <Navigate to="/onboarding" replace />;
