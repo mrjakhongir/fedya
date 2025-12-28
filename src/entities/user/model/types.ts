@@ -4,6 +4,7 @@ export interface IUser {
   last_name?: string;
   username?: string;
   photo_url?: string;
+  initData?: string;
 }
 
 export interface IUserCheck {

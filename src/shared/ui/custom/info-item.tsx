@@ -2,7 +2,7 @@ import type { LucideIcon } from "lucide-react";
 
 type Props = {
   label: string | LucideIcon;
-  value: string | number;
+  value?: string | number;
 };
 
 const InfoItem: React.FC<Props> = ({ label, value }) => {

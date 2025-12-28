@@ -15,11 +15,13 @@ import { Link } from "react-router-dom";
 
 const Actions = () => {
   return (
-    <div className="fixed right-0 bottom-0 left-0 overflow-hidden rounded-t-xl bg-white py-4 shadow">
+    <div className="fixed right-0 bottom-0 left-0 border-t bg-white py-3 shadow">
       <Wrapper className="flex justify-end">
         <Dialog>
           <DialogTrigger asChild>
-            <Button>Add to my tests</Button>
+            <Button className="w-full" size="lg">
+              Add to my tests
+            </Button>
           </DialogTrigger>
           <DialogContent className="sm:max-w-[425px]">
             <DialogHeader className="flex flex-col items-center gap-2">

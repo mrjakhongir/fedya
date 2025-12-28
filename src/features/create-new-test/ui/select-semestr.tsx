@@ -23,9 +23,7 @@ const SelectSemestr: React.FC<Props> = ({ control }) => {
       name="semestr"
       render={({ field, fieldState }) => (
         <FormItem>
-          <FormLabel>
-            Semestr <span className="text-red-500">*</span>
-          </FormLabel>
+          <FormLabel>Semestr</FormLabel>
           <FormControl>
             <Select onValueChange={field.onChange} value={field.value}>
               <SelectTrigger

@@ -117,4 +117,8 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  .skeleton {
+    @apply bg-muted/50 animate-pulse rounded-md;
+  }
 }

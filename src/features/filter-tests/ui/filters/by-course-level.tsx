@@ -1,3 +1,4 @@
+import ClearFilter from "@/shared/ui/custom/clear-filter";
 import {
   Select,
   SelectContent,
@@ -6,6 +7,7 @@ import {
   SelectValue,
 } from "@/shared/ui/select";
 import { useQueryState } from "nuqs";
+import { useState } from "react";
 
 const courseLevels = [
   {
@@ -35,9 +37,20 @@ const courseLevels = [
 ];
 
 const ByCourseLevel = () => {
-  const [value, setValue] = useQueryState("course-level");
+  const [open, setOpen] = useState(false);
+  const [value, setValue] = useQueryState("courseLevel");
+
+  const handleClear = () => {
+    setValue(null);
+    setOpen(false);
+  };
   return (
-    <Select value={value ?? ""} onValueChange={setValue}>
+    <Select
+      value={value ?? ""}
+      onValueChange={setValue}
+      open={open}
+      onOpenChange={setOpen}
+    >
       <SelectTrigger className="flex-1 bg-white">
         <SelectValue placeholder="I" />
       </SelectTrigger>
@@ -47,6 +60,8 @@ const ByCourseLevel = () => {
             {level.title}
           </SelectItem>
         ))}
+
+        <ClearFilter onClear={handleClear} />
       </SelectContent>
     </Select>
   );

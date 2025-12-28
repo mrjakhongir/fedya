@@ -23,7 +23,6 @@ const HomePage = () => {
       </div>
     );
   }
-  console.log(data);
 
   if (data && !data.exists) {
     return <Navigate to="/onboarding" replace />;

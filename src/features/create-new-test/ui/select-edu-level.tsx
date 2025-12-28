@@ -23,9 +23,7 @@ const SelectEduLevel: React.FC<Props> = ({ control }) => {
       name="eduLevel"
       render={({ field, fieldState }) => (
         <FormItem>
-          <FormLabel>
-            Education level <span className="text-red-500">*</span>
-          </FormLabel>
+          <FormLabel>Education level</FormLabel>
           <FormControl>
             <Select onValueChange={field.onChange} value={field.value}>
               <SelectTrigger

@@ -1,0 +1,299 @@
+1. What is the capital of France?
++ Paris
+- London
+- Berlin
+- Madrid
+
+2. Which planet is closest to the Sun?
++ Mercury
+- Venus
+- Earth
+- Mars
+
+3. What is the chemical symbol for water?
++ H2O
+- CO2
+- O2
+- NaCl
+
+4. Who wrote "Romeo and Juliet"?
++ William Shakespeare
+- Charles Dickens
+- Mark Twain
+- Jane Austen
+
+5. What is the largest ocean on Earth?
++ Pacific Ocean
+- Atlantic Ocean
+- Indian Ocean
+- Arctic Ocean
+
+6. Which gas do plants absorb?
++ Carbon dioxide
+- Oxygen
+- Nitrogen
+- Hydrogen
+
+7. What is 9 × 7?
++ 63
+- 56
+- 72
+- 49
+
+8. What organ pumps blood in the human body?
++ Heart
+- Lungs
+- Brain
+- Liver
+
+9. Which continent is Egypt located in?
++ Africa
+- Asia
+- Europe
+- Australia
+
+10. What is the boiling point of water at sea level?
++ 100°C
+- 90°C
+- 80°C
+- 110°C
+
+11. Which language has the most native speakers?
++ Mandarin Chinese
+- English
+- Spanish
+- Hindi
+
+12. What is the hardest natural substance?
++ Diamond
+- Gold
+- Iron
+- Quartz
+
+13. Which planet is known as the Red Planet?
++ Mars
+- Venus
+- Jupiter
+- Saturn
+
+14. Who discovered gravity?
++ Isaac Newton
+- Albert Einstein
+- Galileo Galilei
+- Nikola Tesla
+
+15. What is the main gas in Earth’s atmosphere?
++ Nitrogen
+- Oxygen
+- Carbon dioxide
+- Hydrogen
+
+16. Which vitamin is produced by sunlight?
++ Vitamin D
+- Vitamin C
+- Vitamin A
+- Vitamin B12
+
+17. What is the square root of 64?
++ 8
+- 6
+- 7
+- 9
+
+18. Which blood type is a universal donor?
++ O negative
+- A positive
+- B positive
+- AB positive
+
+19. What does CPU stand for?
++ Central Processing Unit
+- Computer Personal Unit
+- Control Program Utility
+- Central Performance Unit
+
+20. Which country invented paper?
++ China
+- Egypt
+- Greece
+- India
+
+21. What is the smallest prime number?
++ 2
+- 1
+- 3
+- 5
+
+22. What force keeps planets in orbit?
++ Gravity
+- Magnetism
+- Friction
+- Electricity
+
+23. Which animal is known as the king of the jungle?
++ Lion
+- Tiger
+- Elephant
+- Leopard
+
+24. What is the freezing point of water?
++ 0°C
+- 10°C
+- -5°C
+- 5°C
+
+25. Which metal is liquid at room temperature?
++ Mercury
+- Iron
+- Aluminum
+- Copper
+
+26. What is the largest mammal?
++ Blue whale
+- Elephant
+- Giraffe
+- Shark
+
+27. Which planet has rings?
++ Saturn
+- Mars
+- Earth
+- Venus
+
+28. Who painted the Mona Lisa?
++ Leonardo da Vinci
+- Vincent van Gogh
+- Pablo Picasso
+- Michelangelo
+
+29. What is the currency of Japan?
++ Yen
+- Dollar
+- Won
+- Yuan
+
+30. Which organ is responsible for breathing?
++ Lungs
+- Heart
+- Kidneys
+- Stomach
+
+31. What is the main source of energy for Earth?
++ Sun
+- Moon
+- Wind
+- Water
+
+32. Which ocean is the smallest?
++ Arctic Ocean
+- Indian Ocean
+- Atlantic Ocean
+- Pacific Ocean
+
+33. What is the human body’s largest organ?
++ Skin
+- Liver
+- Brain
+- Heart
+
+34. Which element has the atomic number 1?
++ Hydrogen
+- Helium
+- Oxygen
+- Nitrogen
+
+35. How many continents are there?
++ 7
+- 5
+- 6
+- 8
+
+36. Which instrument measures temperature?
++ Thermometer
+- Barometer
+- Hygrometer
+- Speedometer
+
+37. What is the fastest land animal?
++ Cheetah
+- Lion
+- Horse
+- Dog
+
+38. Which vitamin helps blood clot?
++ Vitamin K
+- Vitamin A
+- Vitamin D
+- Vitamin C
+
+39. What planet is known for its big red spot?
++ Jupiter
+- Mars
+- Saturn
+- Neptune
+
+40. Which country is famous for pyramids?
++ Egypt
+- Mexico
+- Peru
+- China
+
+41. What gas do humans need to breathe?
++ Oxygen
+- Nitrogen
+- Carbon dioxide
+- Hydrogen
+
+42. What is the largest desert?
++ Sahara
+- Gobi
+- Kalahari
+- Arctic
+
+43. Which shape has three sides?
++ Triangle
+- Square
+- Rectangle
+- Pentagon
+
+44. What is the main component of the Sun?
++ Hydrogen
+- Helium
+- Oxygen
+- Carbon
+
+45. Who invented the telephone?
++ Alexander Graham Bell
+- Thomas Edison
+- Nikola Tesla
+- Isaac Newton
+
+46. Which planet is farthest from the Sun?
++ Neptune
+- Uranus
+- Saturn
+- Jupiter
+
+47. What is the chemical symbol for gold?
++ Au
+- Ag
+- Fe
+- Go
+
+48. Which part of the plant conducts photosynthesis?
++ Leaf
+- Root
+- Stem
+- Flower
+
+49. What is the tallest mountain?
++ Mount Everest
+- K2
+- Kilimanjaro
+- Elbrus
+
+50. Which gas is essential for combustion?
++ Oxygen
+- Nitrogen
+- Carbon dioxide
+- Helium

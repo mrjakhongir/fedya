@@ -8,7 +8,7 @@ const TestPlaygroundPage = () => {
 
   return (
     <div className="flex flex-col gap-5">
-      <Header title="Test 1" />
+      <Header title="Test 1" link="/tests" />
 
       <TestSetup testStarted={testStarted} setTestStarted={setTestStarted} />
 

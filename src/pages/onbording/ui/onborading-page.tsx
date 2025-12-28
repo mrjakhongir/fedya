@@ -23,6 +23,7 @@ const OnboradingPage = () => {
     username: "Mr_Jakhongir",
     photo_url:
       "https://t.me/i/userpic/320/5MLpWpkFap6yF2I-_3ZSQIFdaBSxilNYxYMfE7PIUX4.svg",
+    initData: WebApp.initData,
   };
 
   const startApp = () => {
