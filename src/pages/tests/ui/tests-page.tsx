@@ -4,7 +4,7 @@ import Actions from "./actions";
 const TestsPage = () => {
   return (
     <div>
-      <Header title="My tests" link="/" />
+      <Header title="Testlar" link="/" />
 
       <main className="mb-18 py-5"></main>
 

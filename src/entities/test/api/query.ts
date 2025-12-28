@@ -8,11 +8,11 @@ export const useTests = (params: Record<string, string | null>) => {
   });
 };
 
-export const useTest = (id?: string) => {
+export const useTest = (id?: string, userId?: number) => {
   return useQuery({
-    queryKey: ["test", id],
-    queryFn: () => testApi.single(id),
-    enabled: !!id,
+    queryKey: ["testDetails", id, userId],
+    queryFn: () => testApi.single(id, userId),
+    enabled: !!id && !!userId,
   });
 };
 

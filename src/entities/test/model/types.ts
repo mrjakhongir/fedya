@@ -16,6 +16,7 @@ export interface ITest {
   questions: IQuestion[];
   createdAt: string;
   updatedAt: string;
+  isSaved: boolean;
 }
 
 export interface IQuestion {
@@ -55,4 +56,5 @@ export interface ITestResponse {
   author: IUser;
   totalCount: number;
   questions: IQuestion[];
+  isSaved: boolean;
 }

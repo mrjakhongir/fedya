@@ -1,4 +1,5 @@
 import { useTest } from "@/entities/test/api/query";
+import { useAuthStore } from "@/features/auth/store/use-auth-store";
 import InfoItem from "@/shared/ui/custom/info-item";
 import SectionTitle from "@/shared/ui/custom/section-title";
 import SectionWrapper from "@/shared/ui/custom/section-wrapper";
@@ -11,7 +12,8 @@ import DemoTests from "./demo-tests";
 
 const Details = () => {
   const { id } = useParams();
-  const { data: selectedTest, isLoading } = useTest(id);
+  const { user } = useAuthStore();
+  const { data: selectedTest, isLoading } = useTest(id, user?.id);
 
   if (isLoading) return <ScreenLoader />;
 
@@ -27,13 +29,22 @@ const Details = () => {
           </p>
 
           <ul className="flex flex-col gap-2">
-            <InfoItem label="Subject" value={selectedTest.subject} />
-            <InfoItem label="Course level" value={selectedTest.courseLevel} />
-            <InfoItem label="Edu level" value={selectedTest.eduLevel} />
-            <InfoItem label="University" value={selectedTest.university} />
-            <InfoItem label="Total tests" value={selectedTest.totalCount} />
+            <InfoItem label="Fan" value={selectedTest.subject} />
+            <InfoItem label="Ta'lim darajasi" value={selectedTest.eduLevel} />
             <InfoItem
-              label="Created at"
+              label="Ta'lim bosqichi"
+              value={selectedTest.courseLevel}
+            />
+            <InfoItem
+              label="Univesitet/Institut"
+              value={selectedTest.university}
+            />
+            <InfoItem
+              label="Jami testlar soni"
+              value={selectedTest.totalCount}
+            />
+            <InfoItem
+              label="Yuklangan vaqti"
               value={dayjs(selectedTest.createdAt).format("YYYY-MM-DD HH:mm")}
             />
           </ul>
@@ -67,7 +78,7 @@ const Details = () => {
 
       <DemoTests questions={selectedTest.questions} />
 
-      <Actions />
+      <Actions selectedTest={selectedTest} />
     </div>
   );
 };

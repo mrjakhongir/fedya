@@ -5,7 +5,7 @@ import TestList from "./list/test-list";
 const TestsSearchPage = () => {
   return (
     <div className="flex flex-col items-stretch gap-5">
-      <Header title="Tests search" link="/tests" />
+      <Header title="Tests search" link="/" />
 
       <Filters />
 

@@ -13,7 +13,7 @@ const DemoTests: React.FC<Props> = ({ questions }) => {
   return (
     <SectionWrapper>
       <Wrapper>
-        <SectionTitle title="Testlar" />
+        <SectionTitle title="Namunaviy Testlar" />
 
         <ul className="flex flex-col gap-5">
           {questions.map(({ options, text, id }) => (

@@ -9,8 +9,10 @@ const testApi = {
     return res.data;
   },
 
-  single: async (id?: string) => {
-    const res = await apiClient.get<ITestResponse>(`/api/tests/${id}`);
+  single: async (id?: string, userId?: number) => {
+    const res = await apiClient.get<ITestResponse>(`/api/tests/${id}`, {
+      params: { userId },
+    });
     return res.data;
   },
 };

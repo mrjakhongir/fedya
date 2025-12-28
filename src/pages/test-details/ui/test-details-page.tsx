@@ -4,7 +4,7 @@ import Details from "./details";
 const TestDetailsPage = () => {
   return (
     <div className="flex flex-col gap-5">
-      <Header title="Test details" link="/tests/search" />
+      <Header title="Test tafsilotlari" link="/tests/search" />
 
       <Details />
     </div>
