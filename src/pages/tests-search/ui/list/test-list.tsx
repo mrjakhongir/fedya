@@ -36,8 +36,8 @@ const TestList = () => {
       ))}
 
       {isFetching && (
-        <div className="absolute top-0 right-0 bottom-0 left-0 bg-black/20">
-          <Loader className="text-primary animate-spin" size={40} />
+        <div className="absolute top-0 right-0 bottom-0 left-0 flex justify-center bg-black/20">
+          <Loader className="text-primary animate-spin mt-20" size={40} />
         </div>
       )}
     </Wrapper>

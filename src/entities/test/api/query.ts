@@ -16,6 +16,14 @@ export const useTest = (id?: string, userId?: number) => {
   });
 };
 
+export const useMyTests = (type: "saved" | "owned", userId?: number) => {
+  return useQuery({
+    queryKey: ["my-tests", userId, type],
+    queryFn: () => testApi.getMyTests(type, userId),
+    enabled: !!userId,
+  });
+};
+
 // export function useInfiniteTests(params: string) {
 //   return useInfiniteQuery({
 //     queryKey: ["tests", params],

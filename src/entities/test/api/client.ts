@@ -15,6 +15,13 @@ const testApi = {
     });
     return res.data;
   },
+
+  getMyTests: async (type: string, userId?: number) => {
+    const res = await apiClient.get<ITestsResponse>(`/api/tests/my-tests`, {
+      params: { userId, type },
+    });
+    return res.data;
+  },
 };
 
 export default testApi;
